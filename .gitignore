@@ -1,0 +1,35 @@
+# OS ignores
+.DS_Store
+Thumbs.db
+desktop.ini
+Desktop.ini
+
+# VSCODE ignores
+.vscode/
+
+# Basic python ignores
+__pycache__
+.venv
+*.pyc
+
+# Python tools
+.mypy_cache
+.ruff_cache/
+Pipfile.lock
+
+# Database files
+*.sqlite3
+
+# Project specific
+fixtures/
+!fixture/.gitkeep
+
+# Ignore migrations until project is stable
+main_app/migrations/
+!main_app/migrations/__init__.py
+catalog_app/migrations/
+!catalog_app/migrations/__init__.py
+transaction_app/migrations/
+!transaction_app/migrations/__init__.py
+static/
+!static/.gitkeep
